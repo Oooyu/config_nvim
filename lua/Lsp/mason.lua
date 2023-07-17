@@ -14,6 +14,14 @@ require("mason-lspconfig").setup_handlers {
     -- ["rust_analyzer"] = function ()
     --     require("rust-tools").setup {}
     -- end
+    ["svlangserver"] = function()
+        require("lspconfig").svlangserver.setup {
+            settings = {
+                includeIndexing = { "*.{v,vh,sv,svh}", "**/*.{v,vh,sv,svh}", "**/*/.*{v,vh,sv,svh}" }
+            },
+            single_file_support = true,
+        }
+    end
 }
 
 require("mason-null-ls").setup({
