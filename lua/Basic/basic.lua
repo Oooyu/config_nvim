@@ -38,3 +38,6 @@ end
 
 opt.statusline = MyStatusLine()
 cmd(vim.cmd('autocmd BufRead,BufNewFile *.v set filetype=verilog'))
+
+-- opt.foldmethod=expr
+-- opt.foldexpr=nvim_treesitter#foldexpr()

@@ -17,7 +17,7 @@ require("mason-lspconfig").setup_handlers {
     ["svlangserver"] = function()
         require("lspconfig").svlangserver.setup {
             settings = {
-                includeIndexing = { "*.{v,vh,sv,svh}", "**/*.{v,vh,sv,svh}", "**/*/.*{v,vh,sv,svh}" }
+                includeIndexing = { "*.{v,vh,sv,svh}", "**/*.{v,vh,sv,svh}", "**/*/*.{v,vh,sv,svh}" }
             },
             single_file_support = true,
         }
