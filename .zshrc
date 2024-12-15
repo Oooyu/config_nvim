@@ -26,10 +26,3 @@ if [[ $TMUX != "" ]] then
 else
     export TERM="xterm-256color"
 fi
-
-export GDK_SCALE=2
-
-export PATH="/snap/bin/:$HOME/.config/nvim:$HOME/.local/share/nvim/mason/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.cargo/bin:$PATH"
-# export PATH="$HOME/.config/nvim:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.cargo/bin:$PATH"
-
-source ~/.VCS/Liscen/VCS_Env
